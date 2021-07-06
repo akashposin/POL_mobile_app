@@ -1,0 +1,1871 @@
+{
+	"info": {
+		"_postman_id": "8411e0cd-3aba-4fba-9644-599a63f03893",
+		"name": "Planet of Labors",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Localhost",
+			"item": [
+				{
+					"name": "Logged In user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "phone_number",
+									"value": "335345",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "sam.posin@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/user-logged-in",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"user-logged-in"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "sam11@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "jhon",
+									"type": "text"
+								},
+								{
+									"key": "user_type",
+									"value": "customer",
+									"type": "text"
+								},
+								{
+									"key": "ip_address",
+									"value": "22.222.321",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/save-user",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"save-user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search Service Providers",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "keyword",
+									"value": "salm",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/search-service-providers?cat_id=1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"search-service-providers"
+							],
+							"query": [
+								{
+									"key": "cat_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Service Provider details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/get-user-details?user_id=5",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"get-user-details"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save Rating",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "customer_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "service_provider_id",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "punctuality",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "negotiating",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "quality",
+									"value": "4",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/save-review",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"save-review"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Service provider profile update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "phone_number",
+									"value": "2424234",
+									"type": "text"
+								},
+								{
+									"key": "age",
+									"value": "12",
+									"type": "text"
+								},
+								{
+									"key": "wcb_insurance",
+									"value": "yes",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/service-provider-profile-update",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"service-provider-profile-update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User Profile",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/get-user-profile?user_type=user&user_id=3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"get-user-profile"
+							],
+							"query": [
+								{
+									"key": "user_type",
+									"value": "user"
+								},
+								{
+									"key": "user_id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All Categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/get-categories",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"get-categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Sub Categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/get-sub-categories?cat_id=1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"get-sub-categories"
+							],
+							"query": [
+								{
+									"key": "cat_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save User Addresses",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "House Address",
+									"type": "text"
+								},
+								{
+									"key": "house_number",
+									"value": "#34",
+									"type": "text"
+								},
+								{
+									"key": "full_address",
+									"value": "Peshawar Pakistan",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "Peshawar",
+									"type": "text"
+								},
+								{
+									"key": "latitude",
+									"value": "22.2",
+									"type": "text"
+								},
+								{
+									"key": "longitude",
+									"value": "12.33",
+									"type": "text"
+								},
+								{
+									"key": "ip_address",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/save-address",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"save-address"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Booking Order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "customer_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "service_provider_id",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "booking_date",
+									"value": "2021-06-12",
+									"type": "text"
+								},
+								{
+									"key": "start_time",
+									"value": "2021-06-12 05:00:00",
+									"type": "text"
+								},
+								{
+									"key": "end_time",
+									"value": "2021-06-12 06:00:00",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "Pending",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/booking-order",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"booking-order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All seller Bookings",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "order_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "In Progress",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/change-order-status",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"change-order-status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Reviews",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/get-all-reviews?user_id=5",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"get-all-reviews"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search Categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/get-all-sub-categories?keyword=l",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"get-all-sub-categories"
+							],
+							"query": [
+								{
+									"key": "keyword",
+									"value": "l"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update user Profile",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "category_id",
+									"value": "2,4,1",
+									"type": "text"
+								},
+								{
+									"key": "sub_category_id",
+									"value": "7,8,9",
+									"type": "text"
+								},
+								{
+									"key": "first_name\n",
+									"value": "testing name",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "jhon",
+									"type": "text"
+								},
+								{
+									"key": "phone_number",
+									"value": "2424234",
+									"type": "text"
+								},
+								{
+									"key": "age",
+									"value": "43",
+									"type": "text"
+								},
+								{
+									"key": "user_image",
+									"type": "file",
+									"src": "/Users/salmaniqbal/Desktop/Screenshot 2021-06-19 at 12.44.14 PM.png"
+								},
+								{
+									"key": "wcb_insurance",
+									"value": "no",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/save-user-profile",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"save-user-profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User Addresses",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "address_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "House Address",
+									"type": "text"
+								},
+								{
+									"key": "house_number",
+									"value": "#34",
+									"type": "text"
+								},
+								{
+									"key": "full_address",
+									"value": "Peshawar Pakistan",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "Peshawar",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/update-address",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"update-address"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User Addresses",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "address_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "House Address",
+									"type": "text"
+								},
+								{
+									"key": "house_number",
+									"value": "#34",
+									"type": "text"
+								},
+								{
+									"key": "full_address",
+									"value": "Peshawar Pakistan",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "Peshawar",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/delete-address?id=1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"delete-address"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User Address",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/get-user-address?user_id=2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"get-user-address"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save User Location",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "lat",
+									"value": "12.33",
+									"type": "text"
+								},
+								{
+									"key": "lng",
+									"value": "22.34",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/save-user-location",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"save-user-location"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Forgot Password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "sam11@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/forgot-password",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"forgot-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify Forgot Password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "code",
+									"value": "2047",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "test_password",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/verify-code",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"verify-code"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Online",
+			"item": [
+				{
+					"name": "Logged In user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "phone_number",
+									"value": "335345",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "a@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://pol.aisoftwares.co.in/user-logged-in",
+							"protocol": "https",
+							"host": [
+								"pol",
+								"aisoftwares",
+								"co",
+								"in"
+							],
+							"path": [
+								"user-logged-in"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "ponting@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "jhon",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://pol.aisoftwares.co.in/save-user",
+							"protocol": "https",
+							"host": [
+								"pol",
+								"aisoftwares",
+								"co",
+								"in"
+							],
+							"path": [
+								"save-user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search Service Providers",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "keyword",
+									"value": "salm",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "https://pol.aisoftwares.co.in/search-service-providers?cat_id=1",
+							"protocol": "https",
+							"host": [
+								"pol",
+								"aisoftwares",
+								"co",
+								"in"
+							],
+							"path": [
+								"search-service-providers"
+							],
+							"query": [
+								{
+									"key": "cat_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Service Provider details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://pol.aisoftwares.co.in/get-user-details?user_id=5",
+							"protocol": "https",
+							"host": [
+								"pol",
+								"aisoftwares",
+								"co",
+								"in"
+							],
+							"path": [
+								"get-user-details"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save Ratings",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "customer_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "service_provider_id",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "punctuality",
+									"value": "4.3",
+									"type": "text"
+								},
+								{
+									"key": "negotiating",
+									"value": "4.5",
+									"type": "text"
+								},
+								{
+									"key": "quality",
+									"value": "5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://pol.aisoftwares.co.in/save-review",
+							"protocol": "https",
+							"host": [
+								"pol",
+								"aisoftwares",
+								"co",
+								"in"
+							],
+							"path": [
+								"save-review"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Profile",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "7",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "testing name",
+									"type": "text"
+								},
+								{
+									"key": "phone_number",
+									"value": "2424234",
+									"type": "text"
+								},
+								{
+									"key": "age",
+									"value": "43",
+									"type": "text"
+								},
+								{
+									"key": "experience",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "user_type",
+									"value": "user",
+									"type": "text"
+								},
+								{
+									"key": "user_image",
+									"type": "file",
+									"src": "/Users/salmaniqbal/Desktop/Screenshot 2021-06-19 at 12.44.14 PM.png"
+								},
+								{
+									"key": "sub_category_id",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://pol.aisoftwares.co.in/save-user-profile",
+							"protocol": "https",
+							"host": [
+								"pol",
+								"aisoftwares",
+								"co",
+								"in"
+							],
+							"path": [
+								"save-user-profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User Profile",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://pol.aisoftwares.co.in/get-user-profile?user_id=5",
+							"protocol": "https",
+							"host": [
+								"pol",
+								"aisoftwares",
+								"co",
+								"in"
+							],
+							"path": [
+								"get-user-profile"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All Categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://pol.aisoftwares.co.in/get-categories",
+							"protocol": "https",
+							"host": [
+								"pol",
+								"aisoftwares",
+								"co",
+								"in"
+							],
+							"path": [
+								"get-categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Sub Categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://pol.aisoftwares.co.in/get-sub-categories?cat_id=1",
+							"protocol": "https",
+							"host": [
+								"pol",
+								"aisoftwares",
+								"co",
+								"in"
+							],
+							"path": [
+								"get-sub-categories"
+							],
+							"query": [
+								{
+									"key": "cat_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save User Addresses",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "House Address",
+									"type": "text"
+								},
+								{
+									"key": "house_number",
+									"value": "#34",
+									"type": "text"
+								},
+								{
+									"key": "full_address",
+									"value": "Peshawar Pakistan",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "Peshawar",
+									"type": "text"
+								},
+								{
+									"key": "latitude",
+									"value": "12.12",
+									"type": "text"
+								},
+								{
+									"key": "longitude",
+									"value": "34.23",
+									"type": "text"
+								},
+								{
+									"key": "ip_address",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://pol.aisoftwares.co.in/save-address",
+							"protocol": "https",
+							"host": [
+								"pol",
+								"aisoftwares",
+								"co",
+								"in"
+							],
+							"path": [
+								"save-address"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Booking Order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "customer_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "service_provider_id",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "booking_date",
+									"value": "2021-06-12",
+									"type": "text"
+								},
+								{
+									"key": "start_time",
+									"value": "2021-06-12 05:00:00",
+									"type": "text"
+								},
+								{
+									"key": "end_time",
+									"value": "2021-06-12 06:00:00",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "Pending",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://pol.aisoftwares.co.in/booking-order",
+							"protocol": "https",
+							"host": [
+								"pol",
+								"aisoftwares",
+								"co",
+								"in"
+							],
+							"path": [
+								"booking-order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All seller Bookings",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "order_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "In Progress",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://pol.aisoftwares.co.in/change-order-status",
+							"protocol": "https",
+							"host": [
+								"pol",
+								"aisoftwares",
+								"co",
+								"in"
+							],
+							"path": [
+								"change-order-status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Reviews",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://pol.aisoftwares.co.in/get-all-reviews?user_id=5",
+							"protocol": "https",
+							"host": [
+								"pol",
+								"aisoftwares",
+								"co",
+								"in"
+							],
+							"path": [
+								"get-all-reviews"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search Categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://pol.aisoftwares.co.in/get-all-sub-categories?keyword=f",
+							"protocol": "https",
+							"host": [
+								"pol",
+								"aisoftwares",
+								"co",
+								"in"
+							],
+							"path": [
+								"get-all-sub-categories"
+							],
+							"query": [
+								{
+									"key": "keyword",
+									"value": "f"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Service provider profile update Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "phone_number",
+									"value": "2424234",
+									"type": "text"
+								},
+								{
+									"key": "age",
+									"value": "12",
+									"type": "text"
+								},
+								{
+									"key": "wcb_insurance",
+									"value": "yes",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://pol.aisoftwares.co.in/service-provider-profile-update",
+							"protocol": "https",
+							"host": [
+								"pol",
+								"aisoftwares",
+								"co",
+								"in"
+							],
+							"path": [
+								"service-provider-profile-update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update user Profile",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "category_id",
+									"value": "1,2,3",
+									"type": "text"
+								},
+								{
+									"key": "sub_category_id",
+									"value": "4,3,2",
+									"type": "text"
+								},
+								{
+									"key": "first_name\n",
+									"value": "testing name",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "jhon",
+									"type": "text"
+								},
+								{
+									"key": "phone_number",
+									"value": "2424234",
+									"type": "text"
+								},
+								{
+									"key": "age",
+									"value": "43",
+									"type": "text"
+								},
+								{
+									"key": "user_image",
+									"type": "file",
+									"src": "/Users/salmaniqbal/Desktop/Screenshot 2021-06-19 at 12.44.14 PM.png"
+								},
+								{
+									"key": "wcb_insurance",
+									"value": "no",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://pol.aisoftwares.co.in/save-user-profile",
+							"protocol": "https",
+							"host": [
+								"pol",
+								"aisoftwares",
+								"co",
+								"in"
+							],
+							"path": [
+								"save-user-profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "ponting@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "jhon",
+									"type": "text"
+								},
+								{
+									"key": "user_type",
+									"value": "customer",
+									"type": "text"
+								},
+								{
+									"key": "ip_address",
+									"value": "22.222.321",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://pol.aisoftwares.co.in/save-user",
+							"protocol": "https",
+							"host": [
+								"pol",
+								"aisoftwares",
+								"co",
+								"in"
+							],
+							"path": [
+								"save-user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User Addresses",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "address_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "House Address",
+									"type": "text"
+								},
+								{
+									"key": "house_number",
+									"value": "#34",
+									"type": "text"
+								},
+								{
+									"key": "full_address",
+									"value": "Peshawar Pakistan",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "Peshawar",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://pol.aisoftwares.co.in/update-address",
+							"protocol": "https",
+							"host": [
+								"pol",
+								"aisoftwares",
+								"co",
+								"in"
+							],
+							"path": [
+								"update-address"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User Addresses",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "address_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "House Address",
+									"type": "text"
+								},
+								{
+									"key": "house_number",
+									"value": "#34",
+									"type": "text"
+								},
+								{
+									"key": "full_address",
+									"value": "Peshawar Pakistan",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "Peshawar",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://pol.aisoftwares.co.in/delete-address?id=1",
+							"protocol": "https",
+							"host": [
+								"pol",
+								"aisoftwares",
+								"co",
+								"in"
+							],
+							"path": [
+								"delete-address"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User Address",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://pol.aisoftwares.co.in/get-user-address?user_id=2",
+							"protocol": "https",
+							"host": [
+								"pol",
+								"aisoftwares",
+								"co",
+								"in"
+							],
+							"path": [
+								"get-user-address"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save User Location",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "lat",
+									"value": "12.33",
+									"type": "text"
+								},
+								{
+									"key": "lng",
+									"value": "22.34",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://pol.aisoftwares.co.in/save-user-location",
+							"protocol": "https",
+							"host": [
+								"pol",
+								"aisoftwares",
+								"co",
+								"in"
+							],
+							"path": [
+								"save-user-location"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Forgot Password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "sam11@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://pol.aisoftwares.co.in/forgot-password",
+							"protocol": "https",
+							"host": [
+								"pol",
+								"aisoftwares",
+								"co",
+								"in"
+							],
+							"path": [
+								"forgot-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify Forgot Password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "code",
+									"value": "2047",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "test_password",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://pol.aisoftwares.co.in/verify-code",
+							"protocol": "https",
+							"host": [
+								"pol",
+								"aisoftwares",
+								"co",
+								"in"
+							],
+							"path": [
+								"verify-code"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
